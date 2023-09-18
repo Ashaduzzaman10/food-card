@@ -49,15 +49,7 @@ const searchMeals = () => {
   loadMeal(searchText);
 };
 
-// const loadMealDetails = (idMeal) => {
-//   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
-//   fetch(url)
-//     .then((res) => res.json())
-//     .then((data) => displayMealDetails(data.meals[0]))
-//     .catch((error) => {
-//       console.log(error);
-//     })
-// };
+
 
 const displayMealDetails = (meal) => {
   document.getElementById("mealsDetailsLabel").innerText = meal.strMeal;
